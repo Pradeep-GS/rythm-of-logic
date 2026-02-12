@@ -9,7 +9,7 @@ const EventForm = () => {
     const [form, setForm] = useState({ name: '', email: '', year: '', department: '', college: '', phone: '', kanal_id: '' })
 
     const openvscode = () => {
-        window.location.href = "vscode://file/D:/Events/cart"
+        window.open("https://stackblitz.com/edit/YOUR_PROJECT", "_blank")
     }
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => setForm({ ...form, [e.target.name]: e.target.value })
 
