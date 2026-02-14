@@ -9,7 +9,11 @@ const EventForm = () => {
     const [form, setForm] = useState({ name: '', email: '', year: '', department: '', college: '', phone: '', kanal_id: '' })
 
     const openvscode = () => {
-        window.open("https://stackblitz.com/~/github.com/Pradeep-GS/participants", "_blank")
+          window.open(
+            "https://codesandbox.io/p/github/Pradeep-GS/participants/main",
+            "_blank",
+            "noopener,noreferrer"
+        );
     }
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => setForm({ ...form, [e.target.name]: e.target.value })
 
